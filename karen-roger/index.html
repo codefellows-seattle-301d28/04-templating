@@ -14,7 +14,7 @@
 
     <script id="article-template" type="text/x-handlebars-template">
       <div>
-        <article>
+        <article data-category="{{category}}" data-author="{{author}}">
           <header>
             <h1>{{title}}</h1>
             <div class="byline">
@@ -29,7 +29,7 @@
     </script>
 
     <!--
-      TODO: Add a script tag to hold the Handlebars template.
+      Done: Add a script tag to hold the Handlebars template.
         - Be sure to give it a meaningful id attribute.
         - Move your old template structure to here. Remember that this template needs to have the same structure as the old one!
         - Insert placeholder keys.
