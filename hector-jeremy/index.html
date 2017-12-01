@@ -53,6 +53,17 @@
             </li>
           </ul>
         </div>
+        <article id="hdbars-template" class="template" data-category="cat">
+          <header>
+            <h1>{{title}}</h1>
+            <div class="byline">
+              By <address><a href={{authorUrl}}>{{author}}</a></address>
+              published <time pubdate datetime="2000-01-01">Publish Time</time>
+            </div>
+          </header>
+          <section class="article-body">{{{body}}}</section>
+          <a href="#" class="read-on">Read on &rarr;</a>
+        </article>
       </section>
       <section id="about" class="tab-content">
         <header>
