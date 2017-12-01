@@ -18,9 +18,9 @@
         - Insert placeholder keys.
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
-    <script  id="neighborhood-template" type="text/x-handlebars-template">
+    <script  id="blog-template" type="text/x-handlebars-template">
       <section id="article">
-        <div data-category="{{category}}" data-author="{{author}}">
+        <article data-category="{{category}}" data-author="{{author}}">
           <header>
           <h1>{{title}}</h1>
             <div class="byline">
@@ -29,7 +29,8 @@
             </div>
           </header>
         <section class="article-body">{{{body}}}</section>
-        </div>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
       </section>
     </script>
 
