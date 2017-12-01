@@ -5,8 +5,10 @@ let articleView = {};
 // DONE: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
+
 // PUT YOUR RESPONSE HERE
-//it lets 'this' come up to the top and it will effect all functions with 'this' so you need to have a function that uses function() to stop it from coming up to the top. 
+// Contextual this bubbles up to the global scope. We determined if a function could be refactored by the location of the .this
+
 
 articleView.populateFilters = () => {
   $('article').each(function() {
