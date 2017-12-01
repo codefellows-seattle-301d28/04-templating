@@ -12,9 +12,8 @@ function Article (rawDataObj) {
 }
 
 Article.prototype.toHtml = function() {
-  // TODO: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
+  // Done: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
   let articleTemplate = $('#article-template').html();
-  console.log('aticle template', articleTemplate);
   let articleTemplateRender = Handlebars.compile(articleTemplate);
 
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
@@ -48,6 +47,5 @@ rawData.forEach(articleObject => {
 });
 
 articles.forEach(article => {
-  console.log('appending');
   $('#articles').append(article.toHtml());
 });
