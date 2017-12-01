@@ -12,7 +12,8 @@
     <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
 
 
-    <script id="template" type="text/x-handlebars-template" data-category="cat">
+    <script id="template" type="text/x-handlebars-template" >
+      <article data-category={{category}}>
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
@@ -22,7 +23,8 @@
         </header>
         <section class="article-body">{{{body}}}</section>
         <a href="#" class="read-on">Read on &rarr;</a>
-      </script>
+      </article>
+    </script>
     <!--
       TODO: Add a script tag to hold the Handlebars template.
         - Be sure to give it a meaningful id attribute.

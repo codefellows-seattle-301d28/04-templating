@@ -17,6 +17,7 @@ Article.prototype.toHtml = function() {
   let template = $('#template').html();
   let templateRender = Handlebars.compile(template);
 
+  
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
   // Since your template can't hold any JS logic, we need to execute the logic here.
   // The result is added to the object as a new property, which can then be referenced by key in the template.
@@ -37,8 +38,8 @@ Article.prototype.toHtml = function() {
 
 };
 
-// COMMENT: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
-// PUT YOUR RESPONSE HERE
+// DONE: Why are there parentheses around "(a,b)" in the .sort() method, but not around the "articleObject" or "article" arguments in the .forEach() methods?
+// You only need parenthesis if you are using multiple parameters. If you are only using one you can just leave it open :)
 rawData.sort((a,b) => {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
