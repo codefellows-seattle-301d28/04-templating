@@ -53,7 +53,8 @@
             </li>
           </ul>
         </div>
-        <article id="hdbars-template" class="template" data-category="cat">
+        <script id="hdbars-template" type="text/x-handlebars-template">
+        <article class="template" data-category="{{{category}}}" data-author="{{{author}}}" >
           <header>
             <h1>{{title}}</h1>
             <div class="byline">
@@ -64,6 +65,7 @@
           <section class="article-body">{{{body}}}</section>
           <a href="#" class="read-on">Read on &rarr;</a>
         </article>
+        </script>
       </section>
       <section id="about" class="tab-content">
         <header>
