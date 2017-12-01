@@ -18,23 +18,25 @@
         - Insert placeholder keys.
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
-    <script id="neighborhood-template" type="text/x-handlebars-template">      
-    <section id="articles">
-    <div class="template" data-category="{{category}}">
-    <header>
-    <h1>{{title}}</h1>
-    <div class="byline">
-    by <address><a href="{{authorUrl}}">{{author}}</a></address>
-    published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
-    </div>
-    </header>
-    <section class="article-body">{{{body}}}</section>
-    </div>
-    </section>
+    
+    <script  id="blog-template" type="text/x-handlebars-template">
+      <section id="article">
+        <article data-category="{{category}}" data-author="{{author}}">
+          <header>
+          <h1>{{title}}</h1>
+            <div class="byline">
+              by <address><a href="{{authorUrl}}">{{author}}</a></address>
+              published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
+            </div>
+          </header>
+        <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
+      </section>
     </script>
 
   </head>
-  <body> 
+  <body>
     <header class="site-header clearfix">
       <section class="heading-group-h1">
         <h1>
@@ -89,8 +91,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- DONE: Include Handlebars.JS from a CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.amd.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
