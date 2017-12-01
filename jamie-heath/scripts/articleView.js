@@ -6,6 +6,7 @@ let articleView = {};
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
 // PUT YOUR RESPONSE HERE
+//it lets 'this' come up to the top and it will effect all functions with 'this' so you need to have a function that uses function() to stop it from coming up to the top. 
 
 articleView.populateFilters = () => {
   $('article').each(function() {
